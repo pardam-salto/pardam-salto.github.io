@@ -54,6 +54,7 @@ body{
             border-bottom: solid 0.5px #bf52c994;
         }
     .div2 { grid-area: 3 / 2 / 4 / 5; 
+        max-width: 80%;
         
         }
     .div3 { grid-area: 5 / 5 / 7 / 7; 
