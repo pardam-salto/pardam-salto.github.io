@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@font-face {
+    font-family: "poppins1";
+    src: url(".\Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "simpleday";
+    src: /**url(".\Simpledaily.otf")  format("opentype"),**/ url(".\Simpledaily.woff") format("woff");
+}
+
+:root{
+    --txtcolor: #564027;
+}
+
+*{margin:0;padding:0;}
+
+
+body{
+
+    background-image: url("wp2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+  
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 11; 
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            padding-right: 5px;
+            padding-left:40px;
+            height: 80%;
+            width: auto;
+            background-color: hwb(278 24% 4% / 0.329);
+            backdrop-filter: saturation(0%);
+            border-bottom: solid 0.5px #bf52c994;
+        }
+    .div2 { grid-area: 3 / 2 / 4 / 5; 
+        
+        }
+    .div3 { grid-area: 5 / 5 / 7 / 7; 
+        /**background-color: hsla(240, 100%, 50%, 0);**/ 
+            border:solid #ff6a00 2px;
+            border-radius: 20px;
+            background-image:url("1.jpg");
+            transition: all .5s ease;
+        }
+
+        .div3:hover{
+            transform: scale(1.2);
+        }
+
+        
+    .div4 { grid-area: 5 / 8 / 7 / 10; 
+            background-color: #ffff00;
+        }
+    .div5 { grid-area: 5 / 2 / 7 / 4; 
+            background-color: #00ffff; 
+        }
+
+ 
+
+
+    .kiri{
+
+        padding-left: 20px;
+
+    }
+
+    .kanan{
+        
+        text-align: center;
+        height: 50%;
+   
+    } 
+    
+    /**-----------------------------text-properties------------------------------------**/
+
+    .rt {
+
+        font-size: 30px;
+        color : var(--txtcolor);
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    .kanan>a{
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        color: var(--txtcolor);
+        margin : 16px;
+        font-size: 15px;
+    }
+
+    .kiri>h3 {
+        font-family: 'Cookie', cursive;
+        color: var(--txtcolor);
+        font-size: 40px;
+        font-weight: 80;
+    }
+    
+    .judul {
+        font-family: 'Cookie', cursive;
+    }
